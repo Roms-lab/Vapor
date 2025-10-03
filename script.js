@@ -1882,15 +1882,15 @@ function showUrlsList(content, tab) {
         <h2 style="font-size: 48px; margin-bottom: 20px; border-bottom: 3px solid #fff;">Vapor Internal URLs</h2>
         <ul style="list-style-type: none; padding: 0;">
             <li style="margin-bottom: 15px;">
-                <a href="javascript:void(0);" data-url="Vapor://start" class="custom-url-link" style="font-size: 24px; color: #66ffa1; text-decoration: none;">helios://start&nbsp;<i class="fa-solid fa-link" style="font-size: 18px; color: #66ffa1;"></i></a>
+                <a href="javascript:void(0);" data-url="Vapor://start" class="custom-url-link" style="font-size: 24px; color: #66ffa1; text-decoration: none;">Vapor://start&nbsp;<i class="fa-solid fa-link" style="font-size: 18px; color: #66ffa1;"></i></a>
                 <p style="margin: 5px 0 0 0; color: #b3b3b3;">Vapor start page</p>
             </li>
             <li style="margin-bottom: 15px;">
-                <a href="javascript:void(0);" data-url="Vapor://settings" class="custom-url-link" style="font-size: 24px; color: #66ffa1; text-decoration: none;">helios://settings&nbsp;<i class="fa-solid fa-link" style="font-size: 18px; color: #66ffa1;"></i></a>
+                <a href="javascript:void(0);" data-url="Vapor://settings" class="custom-url-link" style="font-size: 24px; color: #66ffa1; text-decoration: none;">Vapor://settings&nbsp;<i class="fa-solid fa-link" style="font-size: 18px; color: #66ffa1;"></i></a>
                 <p style="margin: 5px 0 0 0; color: #b3b3b3;">Vapor settings page</p>
             </li>
             <li style="margin-bottom: 15px;">
-                <a href="javascript:void(0);" data-url="Vapor://urls" class="custom-url-link" style="font-size: 24px; color: #66ffa1; text-decoration: none;">helios://urls&nbsp;<i class="fa-solid fa-link" style="font-size: 18px; color: #66ffa1;"></i></a>
+                <a href="javascript:void(0);" data-url="Vapor://urls" class="custom-url-link" style="font-size: 24px; color: #66ffa1; text-decoration: none;">Vapor://urls&nbsp;<i class="fa-solid fa-link" style="font-size: 18px; color: #66ffa1;"></i></a>
                 <p style="margin: 5px 0 0 0; color: #b3b3b3;">List of Vapor internal URLs</p>
             </li>
         </ul>
