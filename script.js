@@ -704,7 +704,7 @@ function initializeTabs() {
     document.body.appendChild(newContent);
 
     tabs.push({
-        url: 'helios://start',
+        url: 'Vapor://start',
         content: newContent.innerHTML
     });
 
@@ -728,7 +728,7 @@ document.addEventListener('DOMContentLoaded', initializeTabs);
 
 let currentTabIndex = 0;
 const tabs = [{
-    url: 'helios://start',
+    url: 'Vapor://start',
     content: `<div class="Xt7Lm9Kp3R8f">
   <p>𝙼𝚊𝚍𝚎 𝚋𝚢 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗!</p>
 </div><div class="top-right-boxaa" title="Click here to visit the Vapor GitHub page!">
@@ -761,7 +761,7 @@ const tabs = [{
             <i class="fas fa-search search-iconaa"></i></div>`
 }];
 
-const trustedSchemes = ['helios://', 'https://', 'http://'];
+const trustedSchemes = ['Vapor://', 'https://', 'http://'];
 
 document.getElementById('add-tabaa').addEventListener('click', function() {
     const newTabIndex = tabs.length;
@@ -776,7 +776,7 @@ document.getElementById('add-tabaa').addEventListener('click', function() {
     document.body.appendChild(newContent);
 
     tabs.push({
-        url: 'helios://start',
+        url: 'Vapor://start',
         content: newContent.innerHTML
     });
 
@@ -858,7 +858,7 @@ function updateTabContent(url, content, tab) {
     localStorage.setItem(`tab_${currentTabIndex}`, url);
     sessionStorage.setItem(`tab_${currentTabIndex}`, url);
 
-    if (url === 'helios://start') {
+    if (url === 'Vapor://start') {
         content.innerHTML = `<div class="Xt7Lm9Kp3R8f">
   <p>𝙼𝚊𝚍𝚎 𝚋𝚢 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗!</p>
 </div><div class="top-right-boxaa" title="Click here to visit the Vapor GitHub page!">
@@ -903,7 +903,7 @@ function updateTabContent(url, content, tab) {
             }
         });
 
-    } else if (url === 'helios://settings') {
+    } else if (url === 'Vapor://settings') {
         content.innerHTML = `
         <div class="sidebarvv">
   <h1>Vapor Settings</h1>
@@ -981,7 +981,7 @@ function updateTabContent(url, content, tab) {
                 messageDiv.style.display = 'none';
             }, 3000);
         });
-    } else if (url === 'helios://urls') {
+    } else if (url === 'Vapor://urls') {
         showUrlsList(content, tab);
     } else {
         fetchExternalContent(url, content, currentTabIndex);
@@ -994,7 +994,7 @@ function updateTabContent(url, content, tab) {
 
     updateLockIcon(url);
     updateSpecialDivs(url);
-    if (url === 'helios://start' || url === 'helios://settings' || url === 'helios://urls') {
+    if (url === 'Vapor://start' || url === 'Vapor://settings' || url === 'Vapor://urls') {
         // For internal pages, hide the spinner immediately after setting content
         hideSpinner(tab);
     } else {
@@ -1384,7 +1384,7 @@ function modifyCss(cssText) {
 function updateSpecialDivs() {
     const checkURL = () => {
         const urlInput = document.querySelector('.browser-baraa .address-baraa input');
-        const isHeliosURL = urlInput && urlInput.value.startsWith('helios://');
+        const isHeliosURL = urlInput && urlInput.value.startsWith('Vapor://');
         const officialC = document.querySelector('.official-caa');
         const official = document.querySelector('.officialaa');
 
@@ -1430,11 +1430,11 @@ document.getElementById('url-baraa').addEventListener('keypress', function(e) {
 });
 
 document.querySelector('.home-buttonaa').addEventListener('click', function() {
-    changeTabContent('helios://start');
+    changeTabContent('Vapor://start');
 });
 
 document.querySelector('.settings-buttonaa').addEventListener('click', function() {
-    changeTabContent('helios://settings');
+    changeTabContent('Vapor://settings');
 });
 
 function changeTabContent(url) {
@@ -1711,7 +1711,7 @@ document.querySelector('.forward-buttonaa').addEventListener('click', function()
 
 // Initialize history for existing tabs
 document.querySelectorAll('.tabaa').forEach((tab, index) => {
-    const url = tab.querySelector('.tab-nameaa').textContent === 'New Tab' ? 'helios://start' : document.getElementById('url-baraa').value;
+    const url = tab.querySelector('.tab-nameaa').textContent === 'New Tab' ? 'Vapor://start' : document.getElementById('url-baraa').value;
     updateHistory(index, url);
 });
 
@@ -1777,14 +1777,14 @@ function handleSquareButtonClick() {
     firstTab.querySelector('.tab-nameaa').textContent = 'New Tab';
 
     // Reset URL bar
-    document.getElementById('url-baraa').value = 'helios://start';
+    document.getElementById('url-baraa').value = 'Vapor://start';
 
     // Reset tab content
-    updateTabContent('helios://start', firstTabContent, firstTab);
+    updateTabContent('Vapor://start', firstTabContent, firstTab);
 
     // Reset tab history
     const history = getTabHistory(0);
-    history.history = ['helios://start'];
+    history.history = ['Vapor://start'];
     history.currentIndex = 0;
 
     // Update active tab
