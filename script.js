@@ -10,7 +10,7 @@ document.querySelector('.reload-buttonaa').addEventListener('animationend', func
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DEBUG: Script is running...");
 
-    // List of official Helios URLs
+    // List of official Vapor URLs
     const officialUrls = [
         "https://vapor-delta.vercel.app/"
     ];
@@ -60,13 +60,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Set the verification message
             if (officialUrls.includes(pageUrl)) {
-                console.log("DEBUG: Official Helios URL detected.");
+                console.log("DEBUG: Official Vapor URL detected.");
                 iconElement.classList.add("fa", "fa-circle-check", "sitechecker-secure");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is a secure, official Helios Browser link.`;
+                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is a secure, official Vapor Browser link.`;
             } else {
                 console.log("DEBUG: UNOFFICIAL URL detected!");
                 iconElement.classList.add("fa", "fa-triangle-exclamation", "sitechecker-warning");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Helios Browser link. Use at your own risk, or find a list of official Helios Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
+                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Vapor Browser link. Use at your own risk, or find a list of official Helios Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
             }
 
             console.log("DEBUG: Text updated inside Sitechecker box.");
