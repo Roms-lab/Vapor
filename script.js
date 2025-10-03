@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 console.log("DEBUG: UNOFFICIAL URL detected!");
                 iconElement.classList.add("fa", "fa-triangle-exclamation", "sitechecker-warning");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Vapor Browser link. Use at your own risk, or find a list of official Helios Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
+                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Vapor Browser link. Use at your own risk, or find a list of official Vapor Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
             }
 
             console.log("DEBUG: Text updated inside Sitechecker box.");
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 (function () {
     document.addEventListener("DOMContentLoaded", function () {
-        console.log("Logging: Helios started");
+        console.log("Logging: Vapor started");
         displayHeliosStarted();
 
         document.body.addEventListener("click", function (event) {
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        addLogEntry(`[Helios Log] Helios started successfully`, true);
+        addLogEntry(`[Vapor Log] Vapor started successfully`, true);
     }
 
     let retryCount = 0;
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        addLogEntry(`[Helios Log] ${message}`);
+        addLogEntry(`[Vapor Log] ${message}`);
     }
 
     function addLogEntry(message, isHeader = false) {
@@ -316,7 +316,7 @@ function getHeliosApiKey() {
 
 const heliosSystemMessage = {
   role: "system",
-  content: `You are Helios AI, an advanced AI assistant designed to be helpful, knowledgeable, and adaptable. You were made by dinguschan.`
+  content: `You are Vapor AI, an advanced AI assistant designed to be helpful, knowledgeable, and adaptable. You were made by the Phantax Team.`
 };
 
 const chatbotToggler = document.querySelector(".wrench-buttonaa");
@@ -674,13 +674,13 @@ document.addEventListener('DOMContentLoaded', function() {
 ➥ 𝗱𝗮𝘁𝗮𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗼𝗿.𝗘𝘅𝗲𝗰𝘂𝘁𝗲𝗣𝗿𝗼𝗰𝗲𝘀𝘀.𝗙𝗮𝗶𝗹𝗲𝗱()
 
 𝗦𝘂𝗴𝗴𝗲𝘀𝘁𝗲𝗱 𝗔𝗰𝘁𝗶𝗼𝗻𝘀:
-• Visit [https://github.com/dinguschan-owo/Helios] and verify your browser is up to date.
+• Visit [https://github.com/Roms-lab/Vapor] and verify your browser is up to date.
 • Ensure that the input data is correctly formatted and not null.
 • Scrub any injection attempts.
 • Review the initialization sequence for all dependent objects.
 • Check the logs for any preceding errors that may provide context.
 • Clear browser cache and clear and reset website data storage.
-• If all else fails, visit the above mentioned offical Github page [https://github.com/dinguschan-owo/Helios] and redownload the latest stable version (Helios v1.𝟽.0).
+• If all else fails, visit the above mentioned offical Github page [https://github.com/Roms-lab/Vapor] and redownload the latest stable version (Vapor v1.0.0).
 `;
             document.body.appendChild(contentFetchingProtocolErrorOverlay);
         }
@@ -731,10 +731,10 @@ const tabs = [{
     url: 'helios://start',
     content: `<div class="Xt7Lm9Kp3R8f">
   <p>𝙼𝚊𝚍𝚎 𝚋𝚢 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗!</p>
-</div><div class="top-right-boxaa" title="Click here to visit the Helios GitHub page!">
+</div><div class="top-right-boxaa" title="Click here to visit the Vapor GitHub page!">
   <p><i class="fa-brands fa-github"></i></p>
 </div>
-        <h23>Helios</h23>
+        <h23>Vapor</h23>
         <h21>𝚟𝟷.𝟿.𝟶</h21>
         <div class="search-baraa">
           <div class="search-containeraa">
@@ -798,7 +798,7 @@ function attachClickListeners() {
 }
 
 function openGitHub() {
-    window.open('https://github.com/dinguschan-owo/Helios/', '_blank');
+    window.open('https://github.com/Roms-lab/Vapor/', '_blank');
 }
 
 document.addEventListener('DOMContentLoaded', attachClickListeners);
@@ -861,11 +861,11 @@ function updateTabContent(url, content, tab) {
     if (url === 'helios://start') {
         content.innerHTML = `<div class="Xt7Lm9Kp3R8f">
   <p>𝙼𝚊𝚍𝚎 𝚋𝚢 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗!</p>
-</div><div class="top-right-boxaa" title="Click here to visit the Helios GitHub page!">
+</div><div class="top-right-boxaa" title="Click here to visit the Vapor GitHub page!">
   <p><i class="fa-brands fa-github"></i></p>
 </div>
-        <h23>Helios</h23>
-        <h21>𝚟𝟷.𝟿.𝟶</h21>
+        <h23>Vapor</h23>
+        <h21>𝚟𝟷.0.0</h21>
         <div class="search-baraa">
           <div class="search-containeraa">
   <div class="search-engine-dropdownaa" onclick="toggleDropdown(${currentTabIndex})">
@@ -906,7 +906,7 @@ function updateTabContent(url, content, tab) {
     } else if (url === 'helios://settings') {
         content.innerHTML = `
         <div class="sidebarvv">
-  <h1>Helios Settings</h1>
+  <h1>Vapor Settings</h1>
 
 <button class="active" onclick="showCategory('historyvv')">History</button>
   <button onclick="showCategory('cloakingvv')">Cloaking</button>
@@ -921,7 +921,7 @@ function updateTabContent(url, content, tab) {
 </div>
 
 <div class="content-containervv" id="browserlogsvv">
-  <h3>Helios Browser Logs</h3>
+  <h3>Vapor Browser Logs</h3>
   <div id="logContainer" style="max-height: 400px; overflow-y: auto; border: 3px solid #66ffa1; padding: 10px; background: #222; color: #fff; border-radius: 5px; width: 750px;"></div>
 </div>
 
@@ -932,7 +932,7 @@ function updateTabContent(url, content, tab) {
   <button onclick="openInBlob()">Open in blob:</button>
 </div>
 <div class="content-containervv" id="miscvv">
-  <h31>Customize Helios's Appearance</h31><div class="theme-preview-container">
+  <h31>Customize Vapor's Appearance</h31><div class="theme-preview-container">
 <div class="theme-preview" onclick="activatePreview(this)">
   <div class="browser-simulation">
     <div class="browser-header">
@@ -943,7 +943,7 @@ function updateTabContent(url, content, tab) {
             <div class="barbarbar"></div>
 
     </div>
-    <div class="browser-content"><div class="hetitle">Helios</div><div class="titlelinee"></div><div class="dropmed"></div><div class="send4"></div></div>
+    <div class="browser-content"><div class="hetitle">Vapor</div><div class="titlelinee"></div><div class="dropmed"></div><div class="send4"></div></div>
   </div>
   <p class="theme-name"><i>Default Dark</i> by 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗</p>
 </div>
@@ -958,7 +958,7 @@ function updateTabContent(url, content, tab) {
             <div class="barbarbar-lightmode"></div>
 
     </div>
-    <div class="browser-content-lightmode"><div class="hetitle-lightmode">Helios</div><div class="titlelinee-lightmode"></div><div class="dropmed-lightmode"></div><div class="send4-lightmode"></div></div>
+    <div class="browser-content-lightmode"><div class="hetitle-lightmode">Vapor</div><div class="titlelinee-lightmode"></div><div class="dropmed-lightmode"></div><div class="send4-lightmode"></div></div>
   </div>
   <p class="theme-name-lightmode"><i>Dark Ember</i> by bromse</p>
 </div>
@@ -966,7 +966,7 @@ function updateTabContent(url, content, tab) {
 </div></div>
 
         `;
-        tab.querySelector('.tab-nameaa').textContent = 'Helios Settings';
+        tab.querySelector('.tab-nameaa').textContent = 'Vapor Settings';
         tabs[currentTabIndex].content = content.innerHTML;
         tabs[currentTabIndex].url = url;
 
