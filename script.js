@@ -730,12 +730,12 @@ let currentTabIndex = 0;
 const tabs = [{
     url: 'Vapor://start',
     content: `<div class="Xt7Lm9Kp3R8f">
-  <p>𝙼𝚊𝚍𝚎 𝚋𝚢 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗!</p>
+  <p>𝙼𝚊𝚍𝚎 𝚋𝚢 Zach!</p>
 </div><div class="top-right-boxaa" title="Click here to visit the Vapor GitHub page!">
   <p><i class="fa-brands fa-github"></i></p>
 </div>
         <h23>Vapor</h23>
-        <h21>𝚟𝟷.𝟿.𝟶</h21>
+        <h21>𝚟𝟷.𝟶.</h21>
         <div class="search-baraa">
           <div class="search-containeraa">
   <div class="search-engine-dropdownaa" onclick="toggleDropdown(${currentTabIndex})">
@@ -860,7 +860,7 @@ function updateTabContent(url, content, tab) {
 
     if (url === 'Vapor://start') {
         content.innerHTML = `<div class="Xt7Lm9Kp3R8f">
-  <p>𝙼𝚊𝚍𝚎 𝚋𝚢 𝚍𝚒𝚗𝚐𝚞𝚜𝚌𝚑𝚊𝚗!</p>
+  <p>𝙼𝚊𝚍𝚎 𝚋𝚢 Zach!</p>
 </div><div class="top-right-boxaa" title="Click here to visit the Vapor GitHub page!">
   <p><i class="fa-brands fa-github"></i></p>
 </div>
