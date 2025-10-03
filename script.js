@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 console.log("DEBUG: UNOFFICIAL URL detected!");
                 iconElement.classList.add("fa", "fa-triangle-exclamation", "sitechecker-warning");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Vapor Browser link. Use at your own risk, or find a list of official Vapor Browser links <a href="https://github.com/dinguschan-owo/Helios/blob/main/README.md" target="_blank" class="sitechecker-link">here</a>.`;
+                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is not an official Vapor Browser link. Use at your own risk, or find a list of official Vapor Browser links <a href="https://github.com/Roms-lab/Vapor/tree/main" target="_blank" class="sitechecker-link">here</a>.`;
             }
 
             console.log("DEBUG: Text updated inside Sitechecker box.");
