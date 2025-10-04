@@ -4,10 +4,11 @@ const gameConfig = [
     {
         name: "FNAF 1",
         description: "Play Fnaf 1 in the browser",
-        url: "https://raw.githubusercontent.com/Roms-lab/Nexus/main/Games/FNAF1/FNAF1.html",
+        url: "https://roms-lab.github.io/Nexus/Games/FNAF1/FNAF1.html",
         icon: "fa-gamepad"
     }
 ];
+
 
 // Function to show the games tab with links to external games
 function showGamesTab() {
