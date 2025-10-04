@@ -4,7 +4,7 @@ const gameConfig = [
     {
         name: "FNAF 1",
         description: "Play Fnaf 1 in the browser",
-        url: "https://roms-lab.github.io/Nexus/Games/FNAF1/FNAF1.html",
+        url: "Games/FNAF1/FNAF1.html",
         icon: "fa-gamepad"
     }
 ];
