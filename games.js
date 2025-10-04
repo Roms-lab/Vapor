@@ -1,6 +1,12 @@
 // games.js - Enhanced version with easy game management
 // Game configuration - Easy to add/remove games
 const gameConfig = [
+    {
+        name: "FNAF 1",
+        description: "Play Fnaf 1 in the browser",
+        url: "https://raw.githubusercontent.com/Roms-lab/Nexus/main/Games/FNAF1/FNAF1.html",
+        icon: "fa-gamepad"
+    }
 ];
 
 // Function to show the games tab with links to external games
