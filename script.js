@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // List of official Vapor URLs
     const officialUrls = [
-        "https://vapor-delta.vercel.app/"
+        "https://vapor-delta.vercel.app/",
         "https://vaporproxy.netlify.app/"
     ];
 
